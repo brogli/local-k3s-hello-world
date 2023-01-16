@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-hello-world
+spec:
+  template:
+    spec:
+      containers:
+      - image: spring-hello-world-app:fail
+        name: spring-hello-world-app
+        imagePullPolicy: Never

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-boot-hello-world
+spec:
+  containers:
+    - name: spring-boot-hello-world
+      image: spring-hello-world-app:latest
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 8080
